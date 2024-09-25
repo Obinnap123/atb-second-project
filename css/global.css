@@ -34,20 +34,86 @@ header .nav-bar .nav-bar-card .auth-Links button {
   height: 32px;
   border-radius: 6px;
 }
-header .nav-bar .nav-bar-card .auth-Links .login {
+header .nav-bar .nav-bar-card .auth-Links .login,
+header .nav-bar .nav-bar-card .auth-Links .signup {
   border: 1px solid #D62196;
   background-color: #D62196;
   color: white;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.37px;
 }
 header .nav-bar .nav-bar-card .auth-Links .signup {
   border: 1px solid #440F7C;
   background-color: #440F7C;
-  color: white;
+}
+@media only screen and (min-width: 320px) {
+  header .nav-bar .nav-bar-card {
+    flex-direction: row;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 77.17px;
+  }
+  header .nav-bar .nav-bar-card .logo {
+    width: 100%;
+    max-width: 100.12px;
+  }
+  header .nav-bar .nav-bar-card .auth-Links button {
+    width: 68px;
+    height: 32px;
+  }
+}
+@media only screen and (min-width: 375px) {
+  header .nav-bar .nav-bar-card {
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    max-height: 77.17px;
+  }
+  header .nav-bar .nav-bar-card .logo {
+    width: 100%;
+    max-width: 130.12px;
+  }
+}
+@media only screen and (min-width: 425px) {
+  header .nav-bar .nav-bar-card {
+    width: 100%;
+    max-width: 375px;
+    height: 100%;
+    max-height: 77.17px;
+  }
+  header .nav-bar .nav-bar-card .logo {
+    width: 100%;
+    max-width: 156.12px;
+  }
+  header .nav-bar .nav-bar-card .auth-Links button {
+    width: 73px;
+    height: 32px;
+  }
+}
+@media only screen and (min-width: 540px) {
+  header .nav-bar .nav-bar-card {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 77.17px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header .nav-bar .nav-bar-card {
+    width: 100%;
+    max-width: 718px;
+    height: 100%;
+    max-height: 77.17px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   header .nav-bar .nav-bar-card {
     width: 100%;
-    max-width: 1100px;
+    max-width: 950px;
     height: 100%;
     max-height: 77.17px;
   }
@@ -74,24 +140,52 @@ footer .footer .footer-card {
   margin: 0px auto;
   padding: 20px;
   top: 60px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
   background-color: #440F7C;
 }
+@media only screen and (min-width: 320px) {
+  footer .footer .footer-card {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 100.17px;
+  }
+}
+@media only screen and (min-width: 375px) {
+  footer .footer .footer-card {
+    max-width: 350px;
+  }
+}
+@media only screen and (min-width: 425px) {
+  footer .footer .footer-card {
+    max-width: 375px;
+  }
+}
+@media only screen and (min-width: 540px) {
+  footer .footer .footer-card {
+    max-width: 500px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  footer .footer .footer-card {
+    flex-direction: row;
+    max-width: 717px;
+    max-height: 77.17px;
+  }
+}
 @media only screen and (min-width: 1024px) {
   footer .footer .footer-card {
-    width: 100%;
-    max-width: 1100px;
-    height: 100%;
-    max-height: 77.17px;
+    max-width: 950px;
   }
 }
 @media only screen and (min-width: 1440px) {
   footer .footer .footer-card {
-    width: 100%;
     max-width: 1240px;
-    height: 100%;
-    max-height: 77.17px;
   }
 }
 footer .footer p,
@@ -106,4 +200,14 @@ footer .footer .footer-Links {
 footer .footer .socials {
   display: flex;
   gap: 17px;
+}
+@media only screen and (min-width: 320px) {
+  footer .footer .socials {
+    gap: 6px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  footer .footer .socials {
+    gap: 17px;
+  }
 }/*# sourceMappingURL=global.css.map */
