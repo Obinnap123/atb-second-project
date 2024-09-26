@@ -4,6 +4,33 @@
   align-items: $align;
   flex-direction: $direction;
 }
+@mixin custom-select {
+  // #{$wrapper} {
+  //   position: relative; // The wrapper needs relative positioning to position the arrow correctly
+  //   display: inline-block;
+    .custom-select {
+      border-radius: 8px;
+      border-width: 1px;
+      padding: 10px;
+      cursor: pointer;
+      appearance: none;
+      position: relative;
+      @content;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      background-image: url("../assests/images/downarrow.svg"); /* Use your custom arrow here */
+      background-size: 100%;
+      pointer-events: none;
+    }
+  }
+
 @mixin smallMobile {
   @media only screen and (min-width: $smallMobile) {
     @content;

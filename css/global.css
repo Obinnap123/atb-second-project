@@ -8,6 +8,7 @@ body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  height: 940px;
 }
 
 header .nav-bar .nav-bar-card {
@@ -52,10 +53,7 @@ header .nav-bar .nav-bar-card .auth-Links .signup {
 @media only screen and (min-width: 320px) {
   header .nav-bar .nav-bar-card {
     flex-direction: row;
-    width: 100%;
-    max-width: 300px;
-    height: 100%;
-    max-height: 77.17px;
+    top: 0;
   }
   header .nav-bar .nav-bar-card .logo {
     width: 100%;
@@ -67,24 +65,12 @@ header .nav-bar .nav-bar-card .auth-Links .signup {
   }
 }
 @media only screen and (min-width: 375px) {
-  header .nav-bar .nav-bar-card {
-    width: 100%;
-    max-width: 350px;
-    height: 100%;
-    max-height: 77.17px;
-  }
   header .nav-bar .nav-bar-card .logo {
     width: 100%;
     max-width: 130.12px;
   }
 }
 @media only screen and (min-width: 425px) {
-  header .nav-bar .nav-bar-card {
-    width: 100%;
-    max-width: 375px;
-    height: 100%;
-    max-height: 77.17px;
-  }
   header .nav-bar .nav-bar-card .logo {
     width: 100%;
     max-width: 156.12px;
@@ -96,10 +82,7 @@ header .nav-bar .nav-bar-card .auth-Links .signup {
 }
 @media only screen and (min-width: 540px) {
   header .nav-bar .nav-bar-card {
-    width: 100%;
-    max-width: 500px;
-    height: 100%;
-    max-height: 77.17px;
+    padding: 20px 30px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -108,6 +91,7 @@ header .nav-bar .nav-bar-card .auth-Links .signup {
     max-width: 718px;
     height: 100%;
     max-height: 77.17px;
+    padding: 20px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -127,6 +111,338 @@ header .nav-bar .nav-bar-card .auth-Links .signup {
   }
 }
 
+main .main-section .main-card {
+  display: flex;
+  gap: 33px;
+  width: 100%;
+  max-width: 950px;
+  height: 100%;
+  max-height: 1116px;
+  border-radius: 6px;
+  margin: 0px auto;
+  padding: 21px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 30px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+@media only screen and (min-width: 320px) {
+  main .main-section .main-card {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .main-section .main-card {
+    display: flex;
+    width: 100%;
+    max-width: 718px;
+    height: 100%;
+    max-height: 1116px;
+    gap: 27px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main .main-section .main-card {
+    width: 100%;
+    max-width: 950px;
+    height: 100%;
+    max-height: 1116px;
+    gap: 33px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  main .main-section .main-card {
+    width: 100%;
+    max-width: 1240px;
+    height: 100%;
+    max-height: 1116px;
+    gap: 33px;
+  }
+}
+main .main-section .main-card .main-div {
+  display: flex;
+  gap: 16px;
+}
+@media only screen and (min-width: 768px) {
+  main .main-section .main-card .main-div {
+    gap: 8px;
+  }
+}
+main .main-section .main-card .main-div .number {
+  position: relative;
+  display: inline-block;
+}
+main .main-section .main-card .main-div .number .custom-select {
+  border-radius: 8px;
+  border-width: 1px;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+}
+main .main-section .main-card .main-div .number::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url("../assests/images/downarrow.svg"); /* Use your custom arrow here */
+  background-size: 100%;
+  pointer-events: none;
+}
+main .main-section .main-card .main-div .number .number-select {
+  width: 70px;
+  height: 38px;
+}
+@media only screen and (min-width: 320px) {
+  main .main-section .main-card .main-div .number .number-select {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .main-section .main-card .main-div .number .number-select {
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    padding: 7px 5px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main .main-section .main-card .main-div .number .number-select {
+    width: 70px;
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  main .main-section .main-card .main-div .number .number-select {
+    width: 70px;
+  }
+}
+main .main-section .main-card .main-div .category {
+  position: relative;
+  display: inline-block;
+}
+main .main-section .main-card .main-div .category .custom-select {
+  border-radius: 8px;
+  border-width: 1px;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+}
+main .main-section .main-card .main-div .category::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url("../assests/images/downarrow.svg"); /* Use your custom arrow here */
+  background-size: 100%;
+  pointer-events: none;
+}
+main .main-section .main-card .main-div .category .category-select {
+  width: 80px;
+}
+@media only screen and (min-width: 320px) {
+  main .main-section .main-card .main-div .category .category-select {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .main-section .main-card .main-div .category .category-select {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main .main-section .main-card .main-div .category .category-select {
+    width: 90px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  main .main-section .main-card .main-div .category .category-select {
+    width: 90px;
+  }
+}
+main .main-section .main-card .main-div .job-role {
+  position: relative;
+  display: inline-block;
+}
+main .main-section .main-card .main-div .job-role .custom-select {
+  border-radius: 8px;
+  border-width: 1px;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+}
+main .main-section .main-card .main-div .job-role::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url("../assests/images/downarrow.svg"); /* Use your custom arrow here */
+  background-size: 100%;
+  pointer-events: none;
+}
+main .main-section .main-card .main-div .job-role .Job {
+  width: 386px;
+}
+@media only screen and (min-width: 320px) {
+  main .main-section .main-card .main-div .job-role .Job {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .main-section .main-card .main-div .job-role .Job {
+    position: relative;
+    display: inline-block;
+    width: 197px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main .main-section .main-card .main-div .job-role .Job {
+    width: 386px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  main .main-section .main-card .main-div .job-role .Job {
+    width: 615px;
+  }
+}
+main .main-section .main-card .main-div .date {
+  position: relative;
+  display: inline-block;
+}
+main .main-section .main-card .main-div .date .custom-select {
+  border-radius: 8px;
+  border-width: 1px;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+}
+main .main-section .main-card .main-div .date::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url("../assests/images/downarrow.svg"); /* Use your custom arrow here */
+  background-size: 100%;
+  pointer-events: none;
+}
+main .main-section .main-card .main-div .date .date-select {
+  width: 110px;
+}
+@media only screen and (min-width: 320px) {
+  main .main-section .main-card .main-div .date .date-select {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .main-section .main-card .main-div .date .date-select {
+    position: relative;
+    display: inline-block;
+    width: 101px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main .main-section .main-card .main-div .date .date-select {
+    width: 110px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  main .main-section .main-card .main-div .date .date-select {
+    width: 115px;
+  }
+}
+main .main-section .main-card .main-card-btn {
+  display: flex;
+  gap: 18px;
+}
+@media only screen and (min-width: 768px) {
+  main .main-section .main-card .main-card-btn {
+    gap: 8px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main .main-section .main-card .main-card-btn {
+    gap: 18px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  main .main-section .main-card .main-card-btn {
+    gap: 18px;
+  }
+}
+main .main-section .main-card .main-card-btn a {
+  text-decoration: none;
+}
+main .main-section .main-card .main-card-btn a .filter {
+  width: 100px;
+  height: 38px;
+  border: 1px solid #440F7C;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #DACFE5;
+  color: #440F7C;
+}
+@media only screen and (min-width: 320px) {
+  main .main-section .main-card .main-card-btn a .filter {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .main-section .main-card .main-card-btn a .filter {
+    display: block;
+    width: 92px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  main .main-section .main-card .main-card-btn a .filter {
+    width: 124px;
+  }
+}
+main .main-section .main-card .main-card-btn a .reset {
+  width: 85px;
+  height: 38px;
+  border: 1px solid #440F7C;
+  border-radius: 8px;
+  color: #440F7C;
+}
+@media only screen and (min-width: 320px) {
+  main .main-section .main-card .main-card-btn a .reset {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .main-section .main-card .main-card-btn a .reset {
+    display: block;
+    width: 85px;
+  }
+}
+
 footer .footer .footer-card {
   display: flex;
   justify-content: space-between;
@@ -139,7 +455,7 @@ footer .footer .footer-card {
   max-height: 64px;
   margin: 0px auto;
   padding: 20px;
-  top: 60px;
+  top: 1000px;
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
@@ -150,25 +466,8 @@ footer .footer .footer-card {
 @media only screen and (min-width: 320px) {
   footer .footer .footer-card {
     flex-direction: column;
-    width: 100%;
-    max-width: 300px;
     height: 100%;
-    max-height: 100.17px;
-  }
-}
-@media only screen and (min-width: 375px) {
-  footer .footer .footer-card {
-    max-width: 350px;
-  }
-}
-@media only screen and (min-width: 425px) {
-  footer .footer .footer-card {
-    max-width: 375px;
-  }
-}
-@media only screen and (min-width: 540px) {
-  footer .footer .footer-card {
-    max-width: 500px;
+    max-height: 130.17px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -188,14 +487,29 @@ footer .footer .footer-card {
     max-width: 1240px;
   }
 }
-footer .footer p,
-footer .footer .footer-Links a {
+footer .footer p {
   color: white;
-  text-decoration: none;
+  order: 2;
+}
+@media only screen and (min-width: 320px) {
+  footer .footer p {
+    padding-top: 5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  footer .footer p {
+    order: 1;
+  }
 }
 footer .footer .footer-Links {
   display: flex;
   gap: 17px;
+  order: 1;
+  padding-bottom: 5px;
+}
+footer .footer .footer-Links a {
+  text-decoration: none;
+  color: white;
 }
 footer .footer .socials {
   display: flex;
@@ -203,7 +517,9 @@ footer .footer .socials {
 }
 @media only screen and (min-width: 320px) {
   footer .footer .socials {
-    gap: 6px;
+    gap: 10px;
+    order: 1;
+    padding-top: 5px;
   }
 }
 @media only screen and (min-width: 768px) {
