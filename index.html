@@ -37,35 +37,43 @@
       <div class="main-section">
         <div class="main-card">
           <div class="main-div">
-          <div class="number">
-            <select name="number" id="number" class="custom-select number-select">
-              <option value="10">10</option>
-              <option value="50">50</option>
-              <option value="100">100</option>
-              <option value="200">200</option>
-            </select>
+            <div class="number">
+              <select
+                name="number"
+                id="number"
+                class="custom-select number-select"
+              >
+                <option value="10">10</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+              </select>
+            </div>
+            <div class="category">
+              <select
+                name="category"
+                id="category"
+                class="custom-select category-select"
+              >
+                <option value="all">All</option>
+                <option value="recent">recent</option>
+              </select>
+            </div>
+            <div class="job-role">
+              <select name="Job" id="Job" class="custom-select Job">
+                <option value="Job Role">Job Role</option>
+              </select>
+            </div>
+            <div class="date">
+              <select name="date" id="date" class="custom-select date-select">
+                <option value="Date">Date</option>
+                <option value="Past 24hrs">Past 24hrs</option>
+                <option value="Past Week">Past Week</option>
+                <option value="Past Month">Past Month</option>
+                <option value="Anytime">Anytime</option>
+              </select>
+            </div>
           </div>
-          <div class="category">
-            <select name="category" id="category" class="custom-select category-select">
-              <option value="all">All</option>
-              <option value="recent">recent</option>
-            </select>
-          </div>
-          <div class="job-role">
-            <select name="Job" id="Job" class="custom-select Job">
-              <option value="Job Role">Job Role</option>
-            </select>
-          </div>
-          <div class="date">
-            <select name="date" id="date" class="custom-select date-select">
-              <option value="Date">Date</option>
-              <option value="Past 24hrs">Past 24hrs</option>
-              <option value="Past Week">Past Week</option>
-              <option value="Past Month">Past Month</option>
-              <option value="Anytime">Anytime</option>
-            </select>
-          </div>
-        </div>
           <div class="main-card-btn">
             <a href="#">
               <button class="filter">Filter Jobs</button>
@@ -74,8 +82,46 @@
               <button class="reset">Reset Filter</button>
             </a>
           </div>
+        </div>
+        <div class="div">
+          <aside class="sidebar">
+            <img src="./assests/images/76ers.png" alt="" />
+            <span class="sidebar-span-one">Senior Product Designer</span><br />
+            <span class="sidebar-span-two">ATB TECH </span>
 
-          <aside></aside>
+            <div class="location-price">
+              <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: brightness(1.5);" class="image">
+                <g clip-path="url(#clip0_15944_6527)">
+                <path d="M10.5 5.5C10.5 9 6 12 6 12C6 12 1.5 9 1.5 5.5C1.5 4.30653 1.97411 3.16193 2.81802 2.31802C3.66193 1.47411 4.80653 1 6 1C7.19347 1 8.33807 1.47411 9.18198 2.31802C10.0259 3.16193 10.5 4.30653 10.5 5.5Z" stroke="#D62196" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 7C6.82843 7 7.5 6.32843 7.5 5.5C7.5 4.67157 6.82843 4 6 4C5.17157 4 4.5 4.67157 4.5 5.5C4.5 6.32843 5.17157 7 6 7Z" stroke="#F078B9" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_15944_6527">
+                <rect width="12" height="12" fill="white" transform="translate(0 0.5)"/>
+                </clipPath>
+                </defs>
+          
+                </svg>
+                
+              <p class="location-price-paragraph-one">Lagos, Nigeria</span>
+              <p class="location-price-paragraph-two">₦1,000,000.00</span>
+            </div>
+          </aside>
+          <section class="content-section">
+            <div class="section-div-one">
+              <h1>Senior Product Designer</h1>
+              <a href="">
+                <button>Apply</button>
+              </a>
+            </div>
+            <div class="section-div-two">
+              <span
+                >LAGOS, NGA <span class="slash">/</span> ATB TECH
+                <span class="slash">/</span> INFORMATION TECHNOLOGY</span
+              >
+              <p>Date Posted: 20/07/202</p>
+            </div>
+          </section>
         </div>
       </div>
     </main>
