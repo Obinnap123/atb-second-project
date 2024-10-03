@@ -4,6 +4,97 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.bg-primary {
+  background-color: #D62196;
+}
+
+.bg-tertiary {
+  background-color: #F7D3EA;
+}
+
+.btn {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.37px;
+  padding: 5px 15px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-primary {
+  background-color: #D62196;
+  border: 1px solid #D62196;
+  color: #fff;
+  font-size: 12px;
+}
+.btn-primary:hover {
+  background-color: #440F7C;
+  color: #D62196;
+}
+
+.btn-secondary {
+  background-color: #440F7C;
+  border: 1px solid #440F7C;
+  color: #fff;
+  font-size: 12px;
+}
+.btn-secondary:hover {
+  background-color: #D62196;
+  color: #440F7C;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-none {
+  display: none;
+}
+
+.ml-1 {
+  margin-left: 4px;
+}
+
+.ml-2 {
+  margin-left: 8px;
+}
+
+.text-primary {
+  color: #D62196;
+}
+
+.text-tertiary {
+  color: #F7D3EA;
+}
+
+.text-white {
+  color: #fff;
+}
+
 body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
@@ -27,28 +118,10 @@ header .nav-bar .nav-bar-card {
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
 }
-header .nav-bar .nav-bar-card .auth-Links a {
-  text-decoration: none;
-}
 header .nav-bar .nav-bar-card .auth-Links button {
   width: 73px;
   height: 32px;
   border-radius: 6px;
-}
-header .nav-bar .nav-bar-card .auth-Links .login,
-header .nav-bar .nav-bar-card .auth-Links .signup {
-  border: 1px solid #D62196;
-  background-color: #D62196;
-  color: white;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 18px;
-  text-align: center;
-  letter-spacing: 0.37px;
-}
-header .nav-bar .nav-bar-card .auth-Links .signup {
-  border: 1px solid #440F7C;
-  background-color: #440F7C;
 }
 @media only screen and (min-width: 320px) {
   header .nav-bar .nav-bar-card {
@@ -398,9 +471,6 @@ main .main-section .main-card .main-card-btn {
     gap: 18px;
   }
 }
-main .main-section .main-card .main-card-btn a {
-  text-decoration: none;
-}
 main .main-section .main-card .main-card-btn a .filter {
   width: 100px;
   height: 38px;
@@ -482,7 +552,6 @@ main .div .sidebar .location-price {
 main .div .sidebar .location-price .image {
   width: 10px;
   height: 11px;
-  position: relative;
   left: 32px;
 }
 main .div .sidebar .location-price p {
@@ -491,15 +560,6 @@ main .div .sidebar .location-price p {
   bottom: 3px;
   background-color: #F7D3EA;
   color: #D62196;
-}
-main .div .sidebar .location-price .location-price-paragraph-one {
-  position: relative;
-  left: 9px;
-  padding: 4px 17px;
-}
-main .div .sidebar .location-price .location-price-paragraph-two {
-  position: relative;
-  left: 9px;
   padding: 4px 10px;
 }
 main .div .content-section {
@@ -521,9 +581,6 @@ main .div .content-section .section-div-one a button {
   height: 28px;
   border-radius: 5px;
   padding: 4px 20px 4px 20px;
-  background-color: #440F7C;
-  color: white;
-  border: none;
 }
 main .div .content-section .section-div-two {
   display: flex;
@@ -600,9 +657,6 @@ footer .footer .footer-Links {
   gap: 17px;
   order: 1;
   padding-bottom: 5px;
-}
-footer .footer .footer-Links a {
-  text-decoration: none;
   color: white;
 }
 footer .footer .socials {

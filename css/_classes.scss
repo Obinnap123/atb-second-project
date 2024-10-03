@@ -1,0 +1,91 @@
+.bg-primary {
+    background-color: $primaryColor;
+}
+
+
+.bg-tertiary {
+    background-color: $tertiary_Color;
+}
+
+.btn {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.37px;
+    padding: 5px 15px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.btn-primary {
+    background-color: $primaryColor;
+    border: 1px solid $primaryColor;
+    color: #fff;
+
+    font: {
+        size: $fontSize1;
+    }
+
+    &:hover {
+        background-color: $secondaryColor;
+        color: $primaryColor;
+    }
+}
+
+.btn-secondary {
+    background-color: $secondaryColor;
+    border: 1px solid $secondaryColor;
+    color: #fff;
+
+    font: {
+        size: $fontSize1;
+    }
+
+    &:hover {
+        background-color: $primaryColor;
+        color: $secondaryColor;
+    }
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-none {
+    display: none;
+}
+
+.ml-1 {
+    margin-left: 4px;
+}
+
+.ml-2 {
+    margin-left: 8px;
+}
+
+.text-primary {
+    color: $primaryColor;
+}
+
+.text-tertiary {
+    color: $tertiary_Color;
+}
+
+.text-white {
+    color: #fff;
+}
