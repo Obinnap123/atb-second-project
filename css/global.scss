@@ -165,6 +165,9 @@ main {
         @include tablet_768 {
           gap: 8px;
         }
+        @include largerLaptop {
+          gap: 15px;
+        }
 
         .number {
           position: relative;
@@ -367,6 +370,9 @@ main {
 
       img {
         width: 30px;
+        @include largerLaptop {
+          width: 40px;
+        }
       }
 
       .sidebar-span-one {
@@ -382,6 +388,9 @@ main {
         left: 30px;
         bottom: 22px;
         padding-left: 17px;
+        @include largerLaptop {
+          padding-left: 25px;
+        }
       }
 
       .location-price {
@@ -389,10 +398,13 @@ main {
         // height: 23px;
         position: relative;
         bottom: 10px;
+
         padding-left: 45px;
         display: flex;
         gap: 9px;
-
+        @include largerLaptop {
+          top: 1px;
+        }
         .image {
           width: 10px;
           height: 11px;
@@ -406,6 +418,11 @@ main {
           background-color: $tertiary_Color;
           color: $primaryColor;
           padding: 4px 10px;
+        }
+      }
+      hr{
+        @include largerLaptop{
+          margin-top: 12px;
         }
       }
     }
@@ -425,13 +442,20 @@ main {
         // font-size:11px;
         h1 {
           font-size: 20px;
+          @include tablet_768 {
+            font-size: 18px;
+          }
+          @include largerLaptop {
+            font-size: 26px;
+          }
         }
 
         a {
-          padding: 6px 30px 6px 30px;
+          padding: 8px 40px;
+
           button {
-            width: 90px;
-            height: 28px;
+            width: 127px;
+            height: 40px;
             border-radius: 5px;
           }
         }
@@ -441,10 +465,20 @@ main {
         display: flex;
         justify-content: space-between;
         font-size: 11px;
-        padding-top: 10px;
-
+        padding-top: 20px;
+        font-size: 14px;
+        line-height: 21px;
+        .section-div-two-span {
+          width: 200px;
+          @include largerLaptop {
+            width: 100%;
+          }
+        }
         .slash {
           padding: 0 5px;
+        }
+        p {
+          text-wrap: nowrap;
         }
       }
     }

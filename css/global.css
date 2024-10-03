@@ -83,6 +83,38 @@ ul {
   margin-left: 8px;
 }
 
+.mt-1 {
+  margin-top: 4px;
+}
+
+.mt-2 {
+  margin-top: 8px;
+}
+
+.mt-3 {
+  margin-top: 12px;
+}
+
+.pt-1 {
+  padding-top: 4px;
+}
+
+.pt-2 {
+  padding-top: 8px;
+}
+
+.pt-3 {
+  padding-top: 12px;
+}
+
+.pt-4 {
+  padding-top: 16px;
+}
+
+.pt-5 {
+  padding-top: 20px;
+}
+
 .text-primary {
   color: #D62196;
 }
@@ -243,6 +275,11 @@ main .main-section .main-card .main-div {
 @media only screen and (min-width: 768px) {
   main .main-section .main-card .main-div {
     gap: 8px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  main .main-section .main-card .main-div {
+    gap: 15px;
   }
 }
 main .main-section .main-card .main-div .number {
@@ -530,6 +567,11 @@ main .div .sidebar {
 main .div .sidebar img {
   width: 30px;
 }
+@media only screen and (min-width: 1440px) {
+  main .div .sidebar img {
+    width: 40px;
+  }
+}
 main .div .sidebar .sidebar-span-one {
   position: relative;
   bottom: 18px;
@@ -543,12 +585,22 @@ main .div .sidebar .sidebar-span-two {
   bottom: 22px;
   padding-left: 17px;
 }
+@media only screen and (min-width: 1440px) {
+  main .div .sidebar .sidebar-span-two {
+    padding-left: 25px;
+  }
+}
 main .div .sidebar .location-price {
   position: relative;
   bottom: 10px;
   padding-left: 45px;
   display: flex;
   gap: 9px;
+}
+@media only screen and (min-width: 1440px) {
+  main .div .sidebar .location-price {
+    top: 1px;
+  }
 }
 main .div .sidebar .location-price .image {
   width: 10px;
@@ -562,6 +614,11 @@ main .div .sidebar .location-price p {
   background-color: #F7D3EA;
   color: #D62196;
   padding: 4px 10px;
+}
+@media only screen and (min-width: 1440px) {
+  main .div .sidebar hr {
+    margin-top: 12px;
+  }
 }
 main .div .content-section {
   flex-grow: 10;
@@ -578,22 +635,45 @@ main .div .content-section .section-div-one {
 main .div .content-section .section-div-one h1 {
   font-size: 20px;
 }
+@media only screen and (min-width: 768px) {
+  main .div .content-section .section-div-one h1 {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  main .div .content-section .section-div-one h1 {
+    font-size: 26px;
+  }
+}
 main .div .content-section .section-div-one a {
-  padding: 6px 30px 6px 30px;
+  padding: 8px 40px;
 }
 main .div .content-section .section-div-one a button {
-  width: 90px;
-  height: 28px;
+  width: 127px;
+  height: 40px;
   border-radius: 5px;
 }
 main .div .content-section .section-div-two {
   display: flex;
   justify-content: space-between;
   font-size: 11px;
-  padding-top: 10px;
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 21px;
+}
+main .div .content-section .section-div-two .section-div-two-span {
+  width: 200px;
+}
+@media only screen and (min-width: 1440px) {
+  main .div .content-section .section-div-two .section-div-two-span {
+    width: 100%;
+  }
 }
 main .div .content-section .section-div-two .slash {
   padding: 0 5px;
+}
+main .div .content-section .section-div-two p {
+  text-wrap: nowrap;
 }
 
 footer .footer .footer-card {
