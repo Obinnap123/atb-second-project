@@ -9,10 +9,6 @@ a {
   color: inherit;
 }
 
-ul {
-  list-style: none;
-}
-
 .bg-primary {
   background-color: #D62196;
 }
@@ -83,6 +79,18 @@ ul {
   margin-left: 8px;
 }
 
+.ml-3 {
+  margin-left: 12px;
+}
+
+.ml-4 {
+  margin-left: 16px;
+}
+
+.ml-5 {
+  margin-left: 20px;
+}
+
 .mt-1 {
   margin-top: 4px;
 }
@@ -93,6 +101,14 @@ ul {
 
 .mt-3 {
   margin-top: 12px;
+}
+
+.mt-4 {
+  margin-top: 16px;
+}
+
+.mt-5 {
+  margin-top: 20px;
 }
 
 .pt-1 {
@@ -262,6 +278,7 @@ main .main-section {
 }
 main .main-section .main-card {
   display: flex;
+  flex-direction: row;
   gap: 33px;
   font-size: 12px;
   font-weight: 400;
@@ -563,6 +580,8 @@ main .div .sidebar {
   flex-direction: column;
   overflow-y: auto;
   padding: 15px;
+  width: 250px; /* Adjust this width according to your design */
+  flex-shrink: 0;
 }
 main .div .sidebar img {
   width: 30px;
@@ -622,9 +641,9 @@ main .div .sidebar .location-price p {
 }
 main .div .content-section {
   flex-grow: 10;
-  overflow-y: auto;
   padding-top: 20px;
   padding-left: 20px;
+  height: 100vh;
 }
 main .div .content-section .section-div-one {
   display: flex;
@@ -675,6 +694,22 @@ main .div .content-section .section-div-two .slash {
 main .div .content-section .section-div-two p {
   text-wrap: nowrap;
 }
+main .div .content-section .main-content h2 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+main .div .content-section .main-content .Job-overview h3 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19.5px;
+}
+main .div .content-section .main-content .Job-overview p,
+main .div .content-section .main-content .Job-overview ul {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+}
 
 footer .footer .footer-card {
   display: flex;
@@ -688,7 +723,7 @@ footer .footer .footer-card {
   max-height: 64px;
   margin: 0px auto;
   padding: 20px;
-  top: 1000px;
+  top: 50px;
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
