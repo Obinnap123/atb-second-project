@@ -105,7 +105,7 @@ main {
     width: 100%;
     max-width: 950px;
     height: 100%;
-    max-height: 1116px;
+    // max-height: 1116px;
     border-radius: 6px;
     margin: 0px auto;
     // padding: 21px;
@@ -119,6 +119,7 @@ main {
     // }
     @include smallMobile {
       border-radius: 0;
+      // max-height: 100%;
     }
     @include mediumMobile {
       max-height: none;
@@ -383,7 +384,8 @@ main {
     @include tablet_768 {
       height: 100vh;
     }
-    .sidebar {
+    
+     .sidebar {
       flex-grow: 2;
       flex-direction: column;
       // height: auto;
@@ -517,7 +519,7 @@ main {
         }
       }
     }
-
+  
     .content-section {
       // display: flex;
       // flex-direction: column;
@@ -567,10 +569,15 @@ main {
         font-size: 14px;
         line-height: 21px;
         .section-div-two-span {
+          @include tablet_768{
           width: 200px;
-          @include largerLaptop {
-            width: 100%;
-          }
+        }
+        @include tabletAndAbove{
+          width: 100%;
+        }
+          // @include largerLaptop {
+          //   width: 100%;
+          // }
         }
         .slash {
           padding: 0 5px;
