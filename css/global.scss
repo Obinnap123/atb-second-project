@@ -389,8 +389,8 @@ main {
       // height: auto;
       overflow-y: auto;
 
-      padding: 15px;
-      width: 250px; /* Adjust this width according to your design */
+      // padding: 15px;
+      width: 300px; /* Adjust this width according to your design */
       flex-shrink: 0;
 
       img {
@@ -484,7 +484,8 @@ main {
           margin-left: 0;
         }
         @include largerLaptop {
-          top: 1px;
+          // top: 1px;
+          padding-left: 55px;
         }
         .image {
           width: 10px;
@@ -518,13 +519,13 @@ main {
     }
 
     .content-section {
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-      // overflow-y: hidden;
+      // display: flex;
+      // flex-direction: column;
+      flex-grow: 10;
+      // overflow-y:auto;
       padding-top: 20px;
       padding-left: 20px;
-      // height: 100vh;
+      height: 100vh;
       @include smallMobile {
         display: none;
       }
@@ -631,7 +632,12 @@ footer {
       margin: 0px auto;
       padding: 20px;
       top: 100px;
-
+      @include smallMobile {
+        top: 70px;
+      }
+      @include tablet_768 {
+        top: 100px;
+      }
       // bottom: 300px;
       font: {
         size: $fontSize1;

@@ -111,6 +111,10 @@ a {
   margin-top: 20px;
 }
 
+.p-1-15 {
+  padding: 1px 15px;
+}
+
 .pt-1 {
   padding-top: 4px;
 }
@@ -607,8 +611,7 @@ main .div .sidebar {
   flex-grow: 2;
   flex-direction: column;
   overflow-y: auto;
-  padding: 15px;
-  width: 250px; /* Adjust this width according to your design */
+  width: 300px; /* Adjust this width according to your design */
   flex-shrink: 0;
 }
 main .div .sidebar img {
@@ -720,7 +723,7 @@ main .div .sidebar .location-price {
 }
 @media only screen and (min-width: 1440px) {
   main .div .sidebar .location-price {
-    top: 1px;
+    padding-left: 55px;
   }
 }
 main .div .sidebar .location-price .image {
@@ -757,11 +760,10 @@ main .div .sidebar .location-price p {
   }
 }
 main .div .content-section {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  flex-grow: 10;
   padding-top: 20px;
   padding-left: 20px;
+  height: 100vh;
 }
 @media only screen and (min-width: 320px) {
   main .div .content-section {
@@ -872,6 +874,16 @@ footer .footer .footer-card {
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
   background-color: #440F7C;
+}
+@media only screen and (min-width: 320px) {
+  footer .footer .footer-card {
+    top: 70px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  footer .footer .footer-card {
+    top: 100px;
+  }
 }
 @media only screen and (min-width: 320px) {
   footer .footer .footer-card {
