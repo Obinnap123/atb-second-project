@@ -242,10 +242,16 @@ main .main-section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   top: 30px;
+  color: #5E5873;
 }
 @media only screen and (min-width: 320px) {
   main .main-section {
-    display: none;
+    border-radius: 0;
+  }
+}
+@media only screen and (min-width: 375px) {
+  main .main-section {
+    max-height: none;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -255,6 +261,7 @@ main .main-section {
     max-width: 718px;
     height: 100%;
     max-height: 1116px;
+    border-radius: 6px;
     gap: 27px;
   }
 }
@@ -284,6 +291,16 @@ main .main-section .main-card {
   font-weight: 400;
   line-height: 18px;
   padding: 20px;
+}
+@media only screen and (min-width: 320px) {
+  main .main-section .main-card {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .main-section .main-card {
+    display: flex;
+  }
 }
 main .main-section .main-card .main-div {
   display: flex;
@@ -574,6 +591,17 @@ main .div {
   left: -10px;
   padding: 15px;
   display: flex;
+  height: 100vh;
+}
+@media only screen and (min-width: 320px) {
+  main .div {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .div {
+    height: 100vh;
+  }
 }
 main .div .sidebar {
   flex-grow: 2;
@@ -586,6 +614,21 @@ main .div .sidebar {
 main .div .sidebar img {
   width: 30px;
 }
+@media only screen and (min-width: 320px) {
+  main .div .sidebar img {
+    width: 50px;
+  }
+}
+@media only screen and (min-width: 425px) {
+  main .div .sidebar img {
+    width: 70px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .div .sidebar img {
+    width: 30px;
+  }
+}
 @media only screen and (min-width: 1440px) {
   main .div .sidebar img {
     width: 40px;
@@ -597,12 +640,52 @@ main .div .sidebar .sidebar-span-one {
   font-size: 14px;
   padding-left: 10px;
 }
+@media only screen and (min-width: 320px) {
+  main .div .sidebar .sidebar-span-one {
+    bottom: 35px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+@media only screen and (min-width: 425px) {
+  main .div .sidebar .sidebar-span-one {
+    bottom: 50px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .div .sidebar .sidebar-span-one {
+    bottom: 18px;
+    font-size: 14px;
+  }
+}
 main .div .sidebar .sidebar-span-two {
   font-size: 8px;
   position: relative;
   left: 30px;
-  bottom: 22px;
+  bottom: 20px;
   padding-left: 17px;
+}
+@media only screen and (min-width: 320px) {
+  main .div .sidebar .sidebar-span-two {
+    bottom: 30px;
+    padding-left: 35px;
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+@media only screen and (min-width: 425px) {
+  main .div .sidebar .sidebar-span-two {
+    padding-left: 55px;
+    bottom: 45px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .div .sidebar .sidebar-span-two {
+    bottom: 20px;
+    padding-left: 17px;
+    font-size: 8px;
+    font-weight: 400;
+  }
 }
 @media only screen and (min-width: 1440px) {
   main .div .sidebar .sidebar-span-two {
@@ -615,6 +698,25 @@ main .div .sidebar .location-price {
   padding-left: 45px;
   display: flex;
   gap: 9px;
+}
+@media only screen and (min-width: 320px) {
+  main .div .sidebar .location-price {
+    bottom: 20px;
+    padding-left: 65px;
+  }
+}
+@media only screen and (min-width: 425px) {
+  main .div .sidebar .location-price {
+    margin-left: 20px;
+    bottom: 30px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .div .sidebar .location-price {
+    bottom: 10px;
+    padding-left: 45px;
+    margin-left: 0;
+  }
 }
 @media only screen and (min-width: 1440px) {
   main .div .sidebar .location-price {
@@ -634,16 +736,45 @@ main .div .sidebar .location-price p {
   color: #D62196;
   padding: 4px 10px;
 }
+@media only screen and (min-width: 320px) {
+  main .div .sidebar .location-price p {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 375px) {
+  main .div .sidebar .location-price p {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .div .sidebar .location-price p {
+    font-size: 8px;
+  }
+}
 @media only screen and (min-width: 1440px) {
   main .div .sidebar hr {
     margin-top: 12px;
   }
 }
 main .div .content-section {
-  flex-grow: 10;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   padding-top: 20px;
   padding-left: 20px;
-  height: 100vh;
+}
+@media only screen and (min-width: 320px) {
+  main .div .content-section {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .div .content-section {
+    display: block;
+  }
+}
+main .div .content-section a {
+  padding: 10px 40px;
 }
 main .div .content-section .section-div-one {
   display: flex;
@@ -663,14 +794,6 @@ main .div .content-section .section-div-one h1 {
   main .div .content-section .section-div-one h1 {
     font-size: 26px;
   }
-}
-main .div .content-section .section-div-one a {
-  padding: 8px 40px;
-}
-main .div .content-section .section-div-one a button {
-  width: 127px;
-  height: 40px;
-  border-radius: 5px;
 }
 main .div .content-section .section-div-two {
   display: flex;
@@ -693,6 +816,25 @@ main .div .content-section .section-div-two .slash {
 }
 main .div .content-section .section-div-two p {
   text-wrap: nowrap;
+}
+main .div .content-section .main-content {
+  overflow-y: auto;
+  height: 60vh;
+}
+@media only screen and (min-width: 320px) {
+  main .div .content-section .main-content {
+    overflow-y: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .div .content-section .main-content {
+    overflow-y: auto;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  main .div .content-section .main-content {
+    height: 70vh;
+  }
 }
 main .div .content-section .main-content h2 {
   font-size: 16px;
@@ -723,7 +865,7 @@ footer .footer .footer-card {
   max-height: 64px;
   margin: 0px auto;
   padding: 20px;
-  top: 50px;
+  top: 100px;
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;

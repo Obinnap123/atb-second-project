@@ -113,17 +113,23 @@ main {
     box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
     position: relative;
     top: 30px;
-
+    color: $SecondaryColor2;
+    // @include smallMobile {
+    //   display: none;
+    // }
     @include smallMobile {
-      display: none;
+      border-radius: 0;
     }
-
+    @include mediumMobile {
+      max-height: none;
+    }
     @include tablet_768 {
       display: block;
       width: 100%;
       max-width: 718px;
       height: 100%;
       max-height: 1116px;
+      border-radius: 6px;
       gap: 27px;
     }
 
@@ -156,6 +162,13 @@ main {
       line-height: 18px;
       padding: 20px;
 
+      @include smallMobile {
+        display: none;
+      }
+
+      @include tablet_768 {
+        display: flex;
+      }
       .main-div {
         display: flex;
         gap: 16px;
@@ -362,20 +375,35 @@ main {
     // padding-right: 1px;
 
     display: flex;
-    // height: 100vh;
+    height: 100vh;
     // overflow-y: auto;
+    @include smallMobile {
+      height: 100%;
+    }
+    @include tablet_768 {
+      height: 100vh;
+    }
     .sidebar {
       flex-grow: 2;
       flex-direction: column;
       // height: auto;
       overflow-y: auto;
-     
+
       padding: 15px;
       width: 250px; /* Adjust this width according to your design */
       flex-shrink: 0;
 
       img {
         width: 30px;
+        @include smallMobile {
+          width: 50px;
+        }
+        @include largeMobile {
+          width: 70px;
+        }
+        @include tablet_768 {
+          width: 30px;
+        }
         @include largerLaptop {
           width: 40px;
         }
@@ -386,14 +414,48 @@ main {
         bottom: 18px;
         font-size: 14px;
         padding-left: 10px;
+        @include smallMobile {
+          bottom: 35px;
+          font: {
+            size: 16px;
+            weight: 500;
+          }
+        }
+        @include largeMobile {
+          bottom: 50px;
+        }
+        @include tablet_768 {
+          bottom: 18px;
+          font-size: 14px;
+        }
       }
 
       .sidebar-span-two {
         font-size: 8px;
         position: relative;
         left: 30px;
-        bottom: 22px;
+        bottom: 20px;
         padding-left: 17px;
+        @include smallMobile {
+          bottom: 30px;
+          padding-left: 35px;
+          font: {
+            size: $fontSize1;
+            weight: 300;
+          }
+        }
+        @include largeMobile {
+          padding-left: 55px;
+          bottom: 45px;
+        }
+        @include tablet_768 {
+          bottom: 20px;
+          padding-left: 17px;
+          font: {
+            size: 8px;
+            weight: 400;
+          }
+        }
         @include largerLaptop {
           padding-left: 25px;
         }
@@ -408,6 +470,19 @@ main {
         padding-left: 45px;
         display: flex;
         gap: 9px;
+        @include smallMobile {
+          bottom: 20px;
+          padding-left: 65px;
+        }
+        @include largeMobile {
+          margin-left: 20px;
+          bottom: 30px;
+        }
+        @include tablet_768 {
+          bottom: 10px;
+          padding-left: 45px;
+          margin-left: 0;
+        }
         @include largerLaptop {
           top: 1px;
         }
@@ -424,6 +499,15 @@ main {
           background-color: $tertiary_Color;
           color: $primaryColor;
           padding: 4px 10px;
+          @include smallMobile {
+            font-size: 10px;
+          }
+          @include mediumMobile {
+            font-size: 12px;
+          }
+          @include tablet_768 {
+            font-size: 8px;
+          }
         }
       }
       hr {
@@ -434,12 +518,28 @@ main {
     }
 
     .content-section {
-      flex-grow: 10;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
       // overflow-y: hidden;
       padding-top: 20px;
       padding-left: 20px;
-      height: 100vh;
+      // height: 100vh;
+      @include smallMobile {
+        display: none;
+      }
+      @include tablet_768 {
+        display: block;
+      }
+      a {
+        padding: 10px 40px;
 
+        // button {
+        //   width: 127px;
+        //   height: 40px;
+        //   border-radius: 5px;
+        // }
+      }
       .section-div-one {
         display: flex;
         justify-content: space-between;
@@ -454,16 +554,6 @@ main {
           }
           @include largerLaptop {
             font-size: 26px;
-          }
-        }
-
-        a {
-          padding: 8px 40px;
-
-          button {
-            width: 127px;
-            height: 40px;
-            border-radius: 5px;
           }
         }
       }
@@ -489,6 +579,17 @@ main {
         }
       }
       .main-content {
+        overflow-y: auto;
+        height: 60vh;
+        @include smallMobile {
+          overflow-y: none;
+        }
+        @include tablet_768 {
+          overflow-y: auto;
+        }
+        @include largerLaptop {
+          height: 70vh;
+        }
         h2 {
           font: {
             size: 16px;
@@ -529,7 +630,7 @@ footer {
       max-height: 64px;
       margin: 0px auto;
       padding: 20px;
-      top: 50px;
+      top: 100px;
 
       // bottom: 300px;
       font: {
