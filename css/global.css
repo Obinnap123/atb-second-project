@@ -61,6 +61,10 @@ a {
   align-items: flex-start;
 }
 
+.bb {
+  border-bottom: 1px solid;
+}
+
 .d-flex {
   display: flex;
   align-items: center;
@@ -69,6 +73,13 @@ a {
 
 .d-none {
   display: none;
+}
+
+.job-listing:hover {
+  background-color: #DACFE5;
+}
+.job-listing:active {
+  background-color: #DACFE5;
 }
 
 .ml-1 {
@@ -111,8 +122,16 @@ a {
   margin-top: 20px;
 }
 
+.mb-1 {
+  margin-bottom: 4px;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+
 .p-1-15 {
-  padding: 5px 15px;
+  padding: 20px 15px;
 }
 
 .pt-1 {
@@ -610,11 +629,11 @@ main .div .sidebar {
   flex-grow: 2;
   flex-direction: column;
   overflow-y: auto;
-  width: 300px; /* Adjust this width according to your design */
+  width: 300px;
   flex-shrink: 0;
 }
 main .div .sidebar img {
-  width: 30px;
+  width: 40px;
 }
 @media only screen and (min-width: 320px) {
   main .div .sidebar img {
@@ -628,7 +647,7 @@ main .div .sidebar img {
 }
 @media only screen and (min-width: 768px) {
   main .div .sidebar img {
-    width: 30px;
+    width: 40px;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -638,7 +657,7 @@ main .div .sidebar img {
 }
 main .div .sidebar .sidebar-span-one {
   position: relative;
-  bottom: 18px;
+  bottom: 26px;
   font-size: 14px;
   padding-left: 10px;
 }
@@ -656,7 +675,7 @@ main .div .sidebar .sidebar-span-one {
 }
 @media only screen and (min-width: 768px) {
   main .div .sidebar .sidebar-span-one {
-    bottom: 18px;
+    bottom: 26px;
     font-size: 14px;
   }
 }
@@ -664,8 +683,8 @@ main .div .sidebar .sidebar-span-two {
   font-size: 8px;
   position: relative;
   left: 30px;
-  bottom: 20px;
-  padding-left: 17px;
+  bottom: 25px;
+  padding-left: 24px;
 }
 @media only screen and (min-width: 320px) {
   main .div .sidebar .sidebar-span-two {
@@ -683,8 +702,8 @@ main .div .sidebar .sidebar-span-two {
 }
 @media only screen and (min-width: 768px) {
   main .div .sidebar .sidebar-span-two {
-    bottom: 20px;
-    padding-left: 17px;
+    bottom: 25px;
+    padding-left: 24px;
     font-size: 8px;
     font-weight: 400;
   }
@@ -697,7 +716,7 @@ main .div .sidebar .sidebar-span-two {
 main .div .sidebar .location-price {
   position: relative;
   bottom: 10px;
-  padding-left: 45px;
+  padding-left: 52px;
   display: flex;
   gap: 9px;
 }
@@ -716,7 +735,7 @@ main .div .sidebar .location-price {
 @media only screen and (min-width: 768px) {
   main .div .sidebar .location-price {
     bottom: 10px;
-    padding-left: 45px;
+    padding-left: 52px;
     margin-left: 0;
   }
 }
@@ -807,6 +826,7 @@ main .div .content-section .section-div-two {
 @media only screen and (min-width: 768px) {
   main .div .content-section .section-div-two .section-div-two-span {
     width: 200px;
+    padding-bottom: 17px;
   }
 }
 @media only screen and (min-width: 1024px) {

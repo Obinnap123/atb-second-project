@@ -1,13 +1,57 @@
 import { jobList } from "./data.js";
 
 const aside = document.querySelector("aside");
-const section= document.querySelector("section")
+const section = document.querySelector("section");
+const urlParam = new URLSearchParams(window.location.search).get("id");
 // Function to dynamically display each job in the jobList array
-function showJob() {
+
+function showJobs() {
+  let elem = "";
+  const singleJob = jobList.find(function (job) {
+    return job.id === Number(urlParam);
+  });
+  console.log(singleJob, urlParam);
+  elem += `
+    <div class="content-section">
+              <div class="section-div-one">
+                <h1>${singleJob.jobtitle}</h1>
+                <a href="" class="btn btn-secondary">Apply</a>
+              </div>
+              <div class="section-div-two">
+                <span class="section-div-two-span"
+                  >${singleJob.secondLocation} <span class="slash">/</span> ${singleJob.company}
+                  <span class="slash">/</span> INFORMATION TECHNOLOGY</span
+                >
+                <p>Date Posted: 20/07/202</p>
+              </div>
+              <hr class="mt-3" />
+
+              <div class="main-content">
+                ${singleJob.description}
+                  <div class="jobinfo mt-4">
+                    <p>Required Educational Level: ${singleJob["education level"]}</p>
+                    <p>Experience Level: ${singleJob["experience level"]}</p>
+                    <p>Job Type: ${singleJob["job type"]}</p>
+                    <p>Job Type Role: ${singleJob["job role type"]}</p>
+                    <p>Location: ${singleJob.thirdLocation}</p>
+                    <p>Salary:${singleJob.amount} - ${singleJob.askingAmount}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-5">
+                <a href="" class="btn btn-secondary">Apply </a>
+              </div>
+            </div>
+    `;
+
+  section.innerHTML = elem;
+}
+function jobsList() {
   let elem = "";
   jobList.forEach(function (job) {
     elem += `
-    <div class="p-1-15 mt-2">
+    <a href="./index.html?id=${job.id}">
+    <div class="p-1-15 mt-1 bb job-listing">
       <img src="${job.imagePath}" alt="" />
       <span class="sidebar-span-one">${job.jobtitle}</span><br />
       <span class="sidebar-span-two">${job.company} </span>
@@ -50,13 +94,15 @@ function showJob() {
           </svg>
           <span class="ml-1" style="text-wrap: nowrap">${job.location}</span>
         </p>
-        <p class="bg-tertiary text-primary d-flex">${job.askingAmount}</p>
+        <p class="bg-tertiary text-primary d-flex">${job.Amount}</p>
       </div>
     </div>
-    <hr class="mt-1" />
+    
+    </a>
     `;
   });
   aside.innerHTML = elem;
 }
 
-showJob();
+jobsList();
+showJobs();
