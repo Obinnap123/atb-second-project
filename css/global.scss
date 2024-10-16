@@ -7,7 +7,7 @@ body {
     weight: $fontWeight;
   }
 
-  height: 940px;
+  // height: 940px;
 }
 
 header {
@@ -374,7 +374,12 @@ main {
     @include tablet_768 {
       height: 100vh;
     }
-
+    @include tabletAndAbove {
+      height: 78vh;
+    }
+    @include largerLaptop {
+      height: 100vh;
+    }
     .sidebar {
       flex-grow: 2;
       flex-direction: column;
@@ -384,7 +389,7 @@ main {
       width: 300px;
       flex-shrink: 0;
       @include tablet_768 {
-        height: 90vh;
+        height: 75vh;
       }
 
       img {
@@ -521,9 +526,18 @@ main {
         padding-top: 20px;
         padding-left: 20px;
         height: 100vh;
-
+        @include smallMobile {
+          height: 85vh;
+        }
+        @include mediumMobile{
+          height: 75vh;
+        }
+        @include largeMobile{
+          height: 80vh;
+        }
         @include tablet_768 {
           display: block;
+          height: 100vh;
         }
 
         //   .apply-btn{
@@ -633,15 +647,24 @@ main {
         }
         .main-content {
           overflow-y: auto;
-          height: 60vh;
-          
+          height: 55vh;
+
           @include smallMobile {
             // overflow-y: none;
-            height: 55vh;
+            height: 40vh;
+          }
+          @include mediumMobile{
+            height: 30vh;
+          }
+          @include largeMobile{
+            height: 35vh;
           }
           @include tablet_768 {
             overflow-y: auto;
-            height: 60vh;
+            height: 55vh;
+          }
+          @include tabletAndAbove {
+            height: 48vh;
           }
           @include largerLaptop {
             height: 70vh;
@@ -670,7 +693,6 @@ main {
               line-height: 19.5px;
             }
           }
-          
         }
       }
     }

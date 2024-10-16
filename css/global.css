@@ -174,7 +174,6 @@ body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  height: 940px;
 }
 
 header .nav-bar .nav-bar-card {
@@ -624,6 +623,16 @@ main .div {
     height: 100vh;
   }
 }
+@media only screen and (min-width: 1024px) {
+  main .div {
+    height: 78vh;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  main .div {
+    height: 100vh;
+  }
+}
 main .div .sidebar {
   flex-grow: 2;
   flex-direction: column;
@@ -633,7 +642,7 @@ main .div .sidebar {
 }
 @media only screen and (min-width: 768px) {
   main .div .sidebar {
-    height: 90vh;
+    height: 75vh;
   }
 }
 main .div .sidebar img {
@@ -797,9 +806,25 @@ main .div section .content-section {
   padding-left: 20px;
   height: 100vh;
 }
+@media only screen and (min-width: 320px) {
+  main .div section .content-section {
+    height: 85vh;
+  }
+}
+@media only screen and (min-width: 375px) {
+  main .div section .content-section {
+    height: 75vh;
+  }
+}
+@media only screen and (min-width: 425px) {
+  main .div section .content-section {
+    height: 80vh;
+  }
+}
 @media only screen and (min-width: 768px) {
   main .div section .content-section {
     display: block;
+    height: 100vh;
   }
 }
 main .div section .content-section .section-div-one {
@@ -938,17 +963,32 @@ main .div section .content-section .section-div-two .apply-btn {
 }
 main .div section .content-section .main-content {
   overflow-y: auto;
-  height: 60vh;
+  height: 55vh;
 }
 @media only screen and (min-width: 320px) {
   main .div section .content-section .main-content {
-    height: 55vh;
+    height: 40vh;
+  }
+}
+@media only screen and (min-width: 375px) {
+  main .div section .content-section .main-content {
+    height: 30vh;
+  }
+}
+@media only screen and (min-width: 425px) {
+  main .div section .content-section .main-content {
+    height: 35vh;
   }
 }
 @media only screen and (min-width: 768px) {
   main .div section .content-section .main-content {
     overflow-y: auto;
-    height: 60vh;
+    height: 55vh;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main .div section .content-section .main-content {
+    height: 48vh;
   }
 }
 @media only screen and (min-width: 1440px) {
