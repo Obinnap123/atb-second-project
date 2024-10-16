@@ -388,9 +388,9 @@ main {
 
       width: 300px;
       flex-shrink: 0;
-      @include tablet_768 {
-        height: 75vh;
-      }
+      // @include tablet_768 {
+      //   height: 75vh;
+      // }
 
       img {
         width: 40px;

@@ -640,11 +640,6 @@ main .div .sidebar {
   width: 300px;
   flex-shrink: 0;
 }
-@media only screen and (min-width: 768px) {
-  main .div .sidebar {
-    height: 75vh;
-  }
-}
 main .div .sidebar img {
   width: 40px;
 }
