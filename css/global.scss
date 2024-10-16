@@ -368,8 +368,7 @@ main {
     padding: 15px;
 
     display: flex;
-   
-  
+
     @include tablet_768 {
       height: 100vh;
     }
@@ -531,10 +530,10 @@ main {
         @include smallMobile {
           height: 85vh;
         }
-        @include mediumMobile{
+        @include mediumMobile {
           height: 75vh;
         }
-        @include largeMobile{
+        @include largeMobile {
           height: 80vh;
         }
         @include tablet_768 {
@@ -791,4 +790,5 @@ footer {
       }
     }
   }
+  // padding: 0;
 }
