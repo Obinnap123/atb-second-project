@@ -2,6 +2,7 @@ import { jobList } from "./data.js";
 
 const aside = document.querySelector("aside");
 const section = document.querySelector("section");
+const jobCards = document.querySelectorAll("#job-card");
 const urlParam = new URLSearchParams(window.location.search).get("id");
 // Function to dynamically display each job in the jobList array
 
@@ -14,8 +15,9 @@ function showJobs() {
   elem += `
     <div class="content-section">
               <div class="section-div-one">
+               <a href="./index.html?id=${singleJob.id}&view=false" class="backward d-none"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"  ><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg> </a>
                 <h1>${singleJob.jobtitle}</h1>
-                <a href="" class="btn btn-secondary">Apply</a>
+                <a href="" class="btn btn-secondary apply">Apply</a>
               </div>
               <div class="section-div-two">
                 <span class="section-div-two-span"
@@ -23,6 +25,7 @@ function showJobs() {
                   <span class="slash">/</span> INFORMATION TECHNOLOGY</span
                 >
                 <p>Date Posted: 20/07/202</p>
+                 <a href="" class="btn btn-secondary apply-btn">Apply</a>
               </div>
               <hr class="mt-3" />
 
@@ -39,7 +42,7 @@ function showJobs() {
                 </div>
               </div>
               <div class="mt-5">
-                <a href="" class="btn btn-secondary">Apply </a>
+                <a href="" class="btn btn-secondary" style="padding:10px 40px">Apply </a>
               </div>
             </div>
     `;
@@ -50,7 +53,7 @@ function jobsList() {
   let elem = "";
   jobList.forEach(function (job) {
     elem += `
-    <a href="./index.html?id=${job.id}">
+    <a href="./index.html?id=${job.id}&view=true" id="job-card">
     <div class="p-1-15 mt-1 bb job-listing">
       <img src="${job.imagePath}" alt="" />
       <span class="sidebar-span-one">${job.jobtitle}</span><br />
@@ -106,3 +109,27 @@ function jobsList() {
 
 jobsList();
 showJobs();
+
+// jobCards.forEach(function (jobcard) {
+//   jobcard.addEventListener("click", handleOpen);
+//   function handleOpen() {
+//     aside.style.display = "none";
+//     section.style.display = "block";
+//     console.log("click");
+//   }
+// });
+const viewParam = new URLSearchParams(window.location.search).get("view");
+
+function displayContentSection() {
+  let width = window.innerWidth;
+  if (width <= 767) {
+    if (viewParam === "true") {
+      aside.style.display = "none";
+      section.style.display = "block";
+    } else {
+      aside.style.display = "block";
+      section.style.display = "none";
+    }
+  }
+}
+displayContentSection();

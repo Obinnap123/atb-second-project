@@ -1,148 +1,151 @@
 .bg-primary {
-    background-color: $primaryColor;
+  background-color: $primaryColor;
 }
 
-
 .bg-tertiary {
-    background-color: $tertiary_Color;
+  background-color: $tertiary_Color;
 }
 
 .btn {
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 18px;
-    text-align: center;
-    letter-spacing: 0.37px;
-    padding: 5px 15px;
-    border-radius: 8px;
-    transition: 0.3s ease;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.37px;
+  padding: 5px 15px;
+  border-radius: 8px;
+  transition: 0.3s ease;
 
-    &:hover {
-        opacity: 0.8;
-    }
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .btn-primary {
-    background-color: $primaryColor;
-    border: 1px solid $primaryColor;
-    color: #fff;
+  background-color: $primaryColor;
+  border: 1px solid $primaryColor;
+  color: #fff;
 
-    font: {
-        size: $fontSize1;
-    }
+  font: {
+    size: $fontSize1;
+  }
 
-    &:hover {
-        background-color: $secondaryColor;
-        color: $primaryColor;
-    }
+  &:hover {
+    background-color: $secondaryColor;
+    color: $primaryColor;
+  }
 }
 
 .btn-secondary {
-    background-color: $secondaryColor;
-    border: 1px solid $secondaryColor;
-    color: #fff;
+  background-color: $secondaryColor;
+  border: 1px solid $secondaryColor;
+  color: #fff;
 
-    font: {
-        size: $fontSize1;
-    }
+  font: {
+    size: $fontSize1;
+  }
 
-    &:hover {
-        background-color: $primaryColor;
-        color: $secondaryColor;
-    }
+  &:hover {
+    background-color: $primaryColor;
+    color: $secondaryColor;
+  }
 }
 
 .align-items-center {
-    align-items: center;
+  align-items: center;
 }
 
 .align-items-start {
-    align-items: flex-start;
+  align-items: flex-start;
 }
-.bb{
-    border-bottom: 1px solid;
-    
+
+.bb {
+  border-bottom: 1px solid;
+}
+.backward {
+  padding: 0 !important;
 }
 .d-flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .d-none {
-    display: none;
+  display: none;
 }
-.job-listing{
-    &:hover {
-        background-color: $tertiaryColor;
-      }
-      &:active{
-        background-color: $tertiaryColor;
-      }
+.job-listing {
+  &:hover {
+    background-color: $tertiaryColor;
+  }
+  &:active {
+    background-color: $tertiaryColor;
+  }
 }
 .ml-1 {
-    margin-left: 4px;
+  margin-left: 4px;
 }
 
 .ml-2 {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 .ml-3 {
-    margin-left: 12px;
+  margin-left: 12px;
 }
 .ml-4 {
-    margin-left: 16px;
+  margin-left: 16px;
 }
 .ml-5 {
-    margin-left: 20px;
+  margin-left: 20px;
 }
-.mt-1{
-    margin-top: 4px;
+.mt-1 {
+  margin-top: 4px;
 }
-.mt-2{
-    margin-top: 8px;
+.mt-2 {
+  margin-top: 8px;
 }
-.mt-3{
-    margin-top: 12px;
+.mt-3 {
+  margin-top: 12px;
 }
-.mt-4{
-    margin-top: 16px;
+.mt-4 {
+  margin-top: 16px;
 }
-.mt-5{
-    margin-top: 20px;
+.mt-5 {
+  margin-top: 20px;
 }
-.mb-1{
-    margin-bottom: 4px;
+.mb-1 {
+  margin-bottom: 4px;
 }
-.mb-2{
-    margin-bottom: 8px;
+.mb-2 {
+  margin-bottom: 8px;
 }
-.p-1-15{
-    padding: 20px 15px;
+.p-1-15 {
+  padding: 20px 15px;
 }
-.pt-1{
-    padding-top: 4px;
+.pt-1 {
+  padding-top: 4px;
 }
-.pt-2{
-    padding-top: 8px;
+.pt-2 {
+  padding-top: 8px;
 }
-.pt-3{
-    padding-top: 12px;
+.pt-3 {
+  padding-top: 12px;
 }
-.pt-4{
-    padding-top: 16px;
+.pt-4 {
+  padding-top: 16px;
 }
-.pt-5{
-    padding-top: 20px;
+.pt-5 {
+  padding-top: 20px;
 }
 .text-primary {
-    color: $primaryColor;
+  color: $primaryColor;
 }
 
 .text-tertiary {
-    color: $tertiary_Color;
+  color: $tertiary_Color;
 }
 
 .text-white {
-    color: #fff;
+  color: #fff;
 }
+

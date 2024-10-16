@@ -65,6 +65,10 @@ a {
   border-bottom: 1px solid;
 }
 
+.backward {
+  padding: 0 !important;
+}
+
 .d-flex {
   display: flex;
   align-items: center;
@@ -269,11 +273,6 @@ main .main-section {
 @media only screen and (min-width: 320px) {
   main .main-section {
     border-radius: 0;
-  }
-}
-@media only screen and (min-width: 375px) {
-  main .main-section {
-    max-height: none;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -632,6 +631,11 @@ main .div .sidebar {
   width: 300px;
   flex-shrink: 0;
 }
+@media only screen and (min-width: 768px) {
+  main .div .sidebar {
+    height: 90vh;
+  }
+}
 main .div .sidebar img {
   width: 40px;
 }
@@ -777,45 +781,84 @@ main .div .sidebar .location-price p {
     margin-top: 12px;
   }
 }
-main .div .content-section {
+@media only screen and (min-width: 320px) {
+  main .div section {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .div section {
+    display: block;
+  }
+}
+main .div section .content-section {
   flex-grow: 10;
   padding-top: 20px;
   padding-left: 20px;
   height: 100vh;
 }
-@media only screen and (min-width: 320px) {
-  main .div .content-section {
-    display: none;
-  }
-}
 @media only screen and (min-width: 768px) {
-  main .div .content-section {
+  main .div section .content-section {
     display: block;
   }
 }
-main .div .content-section a {
-  padding: 10px 40px;
-}
-main .div .content-section .section-div-one {
+main .div section .content-section .section-div-one {
   display: flex;
   justify-content: space-between;
   gap: 32px;
   align-items: center;
 }
-main .div .content-section .section-div-one h1 {
+@media only screen and (min-width: 320px) {
+  main .div section .content-section .section-div-one {
+    justify-content: center;
+    gap: 0;
+    padding-right: 40px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .div section .content-section .section-div-one {
+    justify-content: space-between;
+    gap: 32px;
+    padding-right: 0px;
+  }
+}
+@media only screen and (min-width: 320px) {
+  main .div section .content-section .section-div-one .backward {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .div section .content-section .section-div-one .backward {
+    display: none;
+  }
+}
+main .div section .content-section .section-div-one h1 {
   font-size: 20px;
 }
 @media only screen and (min-width: 768px) {
-  main .div .content-section .section-div-one h1 {
+  main .div section .content-section .section-div-one h1 {
     font-size: 18px;
   }
 }
 @media only screen and (min-width: 1440px) {
-  main .div .content-section .section-div-one h1 {
+  main .div section .content-section .section-div-one h1 {
     font-size: 26px;
   }
 }
-main .div .content-section .section-div-two {
+main .div section .content-section .section-div-one .apply {
+  padding: 10px 40px;
+}
+@media only screen and (min-width: 320px) {
+  main .div section .content-section .section-div-one .apply {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .div section .content-section .section-div-one .apply {
+    display: block;
+  }
+}
+main .div section .content-section .section-div-two {
   display: flex;
   justify-content: space-between;
   font-size: 11px;
@@ -823,54 +866,108 @@ main .div .content-section .section-div-two {
   font-size: 14px;
   line-height: 21px;
 }
+@media only screen and (min-width: 320px) {
+  main .div section .content-section .section-div-two {
+    display: block;
+  }
+}
 @media only screen and (min-width: 768px) {
-  main .div .content-section .section-div-two .section-div-two-span {
+  main .div section .content-section .section-div-two {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 320px) {
+  main .div section .content-section .section-div-two .section-div-two-span {
+    width: 100%;
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .div section .content-section .section-div-two .section-div-two-span {
     width: 200px;
     padding-bottom: 17px;
+    font-size: 14px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  main .div .content-section .section-div-two .section-div-two-span {
+  main .div section .content-section .section-div-two .section-div-two-span {
     width: 100%;
   }
 }
-main .div .content-section .section-div-two .slash {
+main .div section .content-section .section-div-two .slash {
   padding: 0 5px;
 }
-main .div .content-section .section-div-two p {
+main .div section .content-section .section-div-two p {
   text-wrap: nowrap;
 }
-main .div .content-section .main-content {
+@media only screen and (min-width: 320px) {
+  main .div section .content-section .section-div-two p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .div section .content-section .section-div-two p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+main .div section .content-section .section-div-two .apply-btn {
+  position: relative;
+  bottom: 10px;
+}
+@media only screen and (min-width: 320px) {
+  main .div section .content-section .section-div-two .apply-btn {
+    padding: 10px 120px;
+  }
+}
+@media only screen and (min-width: 375px) {
+  main .div section .content-section .section-div-two .apply-btn {
+    padding: 10px 140px;
+  }
+}
+@media only screen and (min-width: 425px) {
+  main .div section .content-section .section-div-two .apply-btn {
+    padding: 10px 165px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .div section .content-section .section-div-two .apply-btn {
+    display: none;
+  }
+}
+main .div section .content-section .main-content {
   overflow-y: auto;
   height: 60vh;
 }
 @media only screen and (min-width: 320px) {
-  main .div .content-section .main-content {
-    overflow-y: none;
+  main .div section .content-section .main-content {
+    height: 55vh;
   }
 }
 @media only screen and (min-width: 768px) {
-  main .div .content-section .main-content {
+  main .div section .content-section .main-content {
     overflow-y: auto;
+    height: 60vh;
   }
 }
 @media only screen and (min-width: 1440px) {
-  main .div .content-section .main-content {
+  main .div section .content-section .main-content {
     height: 70vh;
   }
 }
-main .div .content-section .main-content h2 {
+main .div section .content-section .main-content h2 {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
 }
-main .div .content-section .main-content .Job-overview h3 {
+main .div section .content-section .main-content .Job-overview h3 {
   font-size: 13px;
   font-weight: 700;
   line-height: 19.5px;
 }
-main .div .content-section .main-content .Job-overview p,
-main .div .content-section .main-content .Job-overview ul {
+main .div section .content-section .main-content .Job-overview p,
+main .div section .content-section .main-content .Job-overview ul {
   font-size: 13px;
   font-weight: 400;
   line-height: 19.5px;

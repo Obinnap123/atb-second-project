@@ -116,10 +116,11 @@ main {
 
     @include smallMobile {
       border-radius: 0;
+      // max-height: 850px;
     }
-    @include mediumMobile {
-      max-height: none;
-    }
+    // @include mediumMobile {
+    //   // max-height: 850px;
+    // }
     @include tablet_768 {
       display: block;
       width: 100%;
@@ -382,6 +383,9 @@ main {
 
       width: 300px;
       flex-shrink: 0;
+      @include tablet_768 {
+        height: 90vh;
+      }
 
       img {
         width: 40px;
@@ -504,97 +508,169 @@ main {
         }
       }
     }
-
-    .content-section {
-      flex-grow: 10;
-
-      padding-top: 20px;
-      padding-left: 20px;
-      height: 100vh;
+    section {
       @include smallMobile {
         display: none;
       }
       @include tablet_768 {
         display: block;
       }
-      a {
-        padding: 10px 40px;
-      }
-      .section-div-one {
-        display: flex;
-        justify-content: space-between;
-        gap: 32px;
-        align-items: center;
+      .content-section {
+        flex-grow: 10;
 
-        h1 {
-          font-size: 20px;
+        padding-top: 20px;
+        padding-left: 20px;
+        height: 100vh;
+
+        @include tablet_768 {
+          display: block;
+        }
+
+        //   .apply-btn{
+        //     margin-top: 20px;
+        // }
+        .section-div-one {
+          display: flex;
+          justify-content: space-between;
+          gap: 32px;
+          align-items: center;
+          @include smallMobile {
+            justify-content: center;
+            gap: 0;
+            padding-right: 40px;
+          }
           @include tablet_768 {
-            font-size: 18px;
+            justify-content: space-between;
+            gap: 32px;
+            padding-right: 0px;
+          }
+          .backward {
+            @include smallMobile {
+              display: block;
+            }
+            @include tablet_768 {
+              display: none;
+            }
+          }
+          h1 {
+            font-size: 20px;
+            @include tablet_768 {
+              font-size: 18px;
+            }
+            @include largerLaptop {
+              font-size: 26px;
+            }
+          }
+          .apply {
+            padding: 10px 40px;
+            @include smallMobile {
+              display: none;
+            }
+            @include tablet_768 {
+              display: block;
+            }
+          }
+        }
+
+        .section-div-two {
+          display: flex;
+          justify-content: space-between;
+          font-size: 11px;
+          padding-top: 20px;
+          font-size: 14px;
+          line-height: 21px;
+          @include smallMobile {
+            display: block;
+          }
+          @include tablet_768 {
+            display: flex;
+          }
+          .section-div-two-span {
+            @include smallMobile {
+              width: 100%;
+              font-size: 13px;
+            }
+            @include tablet_768 {
+              width: 200px;
+              padding-bottom: 17px;
+              font-size: 14px;
+            }
+            @include tabletAndAbove {
+              width: 100%;
+            }
+          }
+          .slash {
+            padding: 0 5px;
+          }
+          p {
+            text-wrap: nowrap;
+            @include smallMobile {
+              margin-top: 10px;
+              margin-bottom: 30px;
+            }
+            @include tablet_768 {
+              margin-top: 0;
+              margin-bottom: 0;
+            }
+          }
+          .apply-btn {
+            position: relative;
+            bottom: 10px;
+
+            @include smallMobile {
+              padding: 10px 120px;
+            }
+            @include mediumMobile {
+              padding: 10px 140px;
+            }
+            @include largeMobile {
+              padding: 10px 165px;
+            }
+            @include tablet_768 {
+              display: none;
+            }
+          }
+        }
+        .main-content {
+          overflow-y: auto;
+          height: 60vh;
+          
+          @include smallMobile {
+            // overflow-y: none;
+            height: 55vh;
+          }
+          @include tablet_768 {
+            overflow-y: auto;
+            height: 60vh;
           }
           @include largerLaptop {
-            font-size: 26px;
+            height: 70vh;
           }
-        }
-      }
-
-      .section-div-two {
-        display: flex;
-        justify-content: space-between;
-        font-size: 11px;
-        padding-top: 20px;
-        font-size: 14px;
-        line-height: 21px;
-        .section-div-two-span {
-          @include tablet_768 {
-            width: 200px;
-            padding-bottom: 17px;
-          }
-          @include tabletAndAbove {
-            width: 100%;
-          }
-        }
-        .slash {
-          padding: 0 5px;
-        }
-        p {
-          text-wrap: nowrap;
-        }
-      }
-      .main-content {
-        overflow-y: auto;
-        height: 60vh;
-        @include smallMobile {
-          overflow-y: none;
-        }
-        @include tablet_768 {
-          overflow-y: auto;
-        }
-        @include largerLaptop {
-          height: 70vh;
-        }
-        h2 {
-          font: {
-            size: 16px;
-            weight: 700;
-          }
-          line-height: 24px;
-        }
-        & .Job-overview {
-          h3 {
+          h2 {
             font: {
-              size: 13px;
+              size: 16px;
               weight: 700;
             }
-            line-height: 19.5px;
+            line-height: 24px;
           }
-          p,
-          ul {
-            font: {
-              size: 13px;
-              weight: 400;
+          & .Job-overview {
+            h3 {
+              font: {
+                size: 13px;
+                weight: 700;
+              }
+              line-height: 19.5px;
             }
-            line-height: 19.5px;
+            p,
+            ul {
+              font: {
+                size: 13px;
+                weight: 400;
+              }
+              line-height: 19.5px;
+            }
           }
+          
         }
       }
     }
