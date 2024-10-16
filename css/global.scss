@@ -7,7 +7,7 @@ body {
     weight: $fontWeight;
   }
 
-  // height: 940px;
+  height: 940px;
 }
 
 header {
@@ -654,10 +654,10 @@ main {
             height: 40vh;
           }
           @include mediumMobile{
-            height: 30vh;
+            height: 32vh;
           }
           @include largeMobile{
-            height: 35vh;
+            height: 39vh;
           }
           @include tablet_768 {
             overflow-y: auto;

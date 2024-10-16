@@ -42,7 +42,7 @@ function showJobs() {
                 </div>
               </div>
               <div class="mt-5">
-                <a href="" class="btn btn-secondary" style="padding:10px 40px">Apply </a>
+                <a href="" class="btn btn-secondary" style="padding: 8px 15px; border-radius: 6px">Apply </a>
               </div>
             </div>
     `;
