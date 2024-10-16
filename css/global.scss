@@ -117,6 +117,7 @@ main {
     @include smallMobile {
       border-radius: 0;
       // max-height: 850px;
+      padding: 0 16px;
     }
     // @include mediumMobile {
     //   // max-height: 850px;
@@ -129,6 +130,7 @@ main {
       max-height: 1116px;
       border-radius: 6px;
       gap: 27px;
+      padding: 0;
     }
 
     @include tabletAndAbove {
@@ -557,6 +559,7 @@ main {
             justify-content: space-between;
             gap: 32px;
             padding-right: 0px;
+            padding-left: 0px;
           }
           .backward {
             @include smallMobile {
@@ -632,13 +635,13 @@ main {
             bottom: 10px;
 
             @include smallMobile {
-              padding: 10px 120px;
+              padding: 15px 110px;
             }
             @include mediumMobile {
-              padding: 15px 150px;
+              padding: 15px 135px;
             }
             @include largeMobile {
-              padding: 15px 170px;
+              padding: 15px 155px;
             }
             @include tablet_768 {
               display: none;
