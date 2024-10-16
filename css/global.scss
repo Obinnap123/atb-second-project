@@ -366,11 +366,8 @@ main {
     padding: 15px;
 
     display: flex;
-    height: 100vh;
-
-    @include smallMobile {
-      height: 100%;
-    }
+   
+  
     @include tablet_768 {
       height: 100vh;
     }
@@ -517,6 +514,9 @@ main {
       @include smallMobile {
         display: none;
       }
+      @include smallMobile {
+        height: 100vh;
+      }
       @include tablet_768 {
         display: block;
       }
@@ -549,9 +549,9 @@ main {
           gap: 32px;
           align-items: center;
           @include smallMobile {
-            justify-content: center;
+            justify-content: flex-start;
             gap: 0;
-            padding-right: 40px;
+            padding-left: 20px;
           }
           @include tablet_768 {
             justify-content: space-between;
@@ -635,10 +635,10 @@ main {
               padding: 10px 120px;
             }
             @include mediumMobile {
-              padding: 10px 140px;
+              padding: 15px 150px;
             }
             @include largeMobile {
-              padding: 10px 165px;
+              padding: 15px 170px;
             }
             @include tablet_768 {
               display: none;
@@ -649,22 +649,22 @@ main {
           overflow-y: auto;
           height: 55vh;
 
-          @include smallMobile {
-            // overflow-y: none;
-            height: 40vh;
-          }
-          @include mediumMobile{
-            height: 32vh;
-          }
-          @include largeMobile{
-            height: 39vh;
-          }
+          // @include smallMobile {
+          //   // overflow-y: none;
+          //   height: 57vh;
+          // }
+          // @include mediumMobile{
+          //   height: 53vh;
+          // }
+          // @include largeMobile{
+          //   height: 39vh;
+          // }
           @include tablet_768 {
             overflow-y: auto;
-            height: 55vh;
+            height: 58vh;
           }
           @include tabletAndAbove {
-            height: 48vh;
+            height: 42vh;
           }
           @include largerLaptop {
             height: 70vh;

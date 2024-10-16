@@ -612,12 +612,6 @@ main .div {
   left: -10px;
   padding: 15px;
   display: flex;
-  height: 100vh;
-}
-@media only screen and (min-width: 320px) {
-  main .div {
-    height: 100%;
-  }
 }
 @media only screen and (min-width: 768px) {
   main .div {
@@ -791,6 +785,11 @@ main .div .sidebar .location-price p {
     display: none;
   }
 }
+@media only screen and (min-width: 320px) {
+  main .div section {
+    height: 100vh;
+  }
+}
 @media only screen and (min-width: 768px) {
   main .div section {
     display: block;
@@ -831,9 +830,9 @@ main .div section .content-section .section-div-one {
 }
 @media only screen and (min-width: 320px) {
   main .div section .content-section .section-div-one {
-    justify-content: center;
+    justify-content: flex-start;
     gap: 0;
-    padding-right: 40px;
+    padding-left: 20px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -944,12 +943,12 @@ main .div section .content-section .section-div-two .apply-btn {
 }
 @media only screen and (min-width: 375px) {
   main .div section .content-section .section-div-two .apply-btn {
-    padding: 10px 140px;
+    padding: 15px 150px;
   }
 }
 @media only screen and (min-width: 425px) {
   main .div section .content-section .section-div-two .apply-btn {
-    padding: 10px 165px;
+    padding: 15px 170px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -961,30 +960,15 @@ main .div section .content-section .main-content {
   overflow-y: auto;
   height: 55vh;
 }
-@media only screen and (min-width: 320px) {
-  main .div section .content-section .main-content {
-    height: 40vh;
-  }
-}
-@media only screen and (min-width: 375px) {
-  main .div section .content-section .main-content {
-    height: 32vh;
-  }
-}
-@media only screen and (min-width: 425px) {
-  main .div section .content-section .main-content {
-    height: 39vh;
-  }
-}
 @media only screen and (min-width: 768px) {
   main .div section .content-section .main-content {
     overflow-y: auto;
-    height: 55vh;
+    height: 58vh;
   }
 }
 @media only screen and (min-width: 1024px) {
   main .div section .content-section .main-content {
-    height: 48vh;
+    height: 42vh;
   }
 }
 @media only screen and (min-width: 1440px) {
